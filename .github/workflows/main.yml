@@ -16,6 +16,8 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: 17.0.2+8
+      - name: Super-Linter
+        uses: github/super-linter@v4.9.0
       - name: Build with Gradle
         run: ./gradlew build 
       - name: Upload a Build Artifact
